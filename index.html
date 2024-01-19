@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ec7b2de1dd.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+   <div id="header">
+    
+        <div class="container">
+            <nav>
+                <img src="images/logo3.jpg" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+
+                </ul>
+                
+            </nav>
+            <img src="images/myimage.jpeg" alt="self" class="images">
+            <div class="header-text">
+                <p>Aspiring Software Developer</p>
+                <h1>Hi, I'm<span><br> Rashmirekha</span> Sahoo</h1>
+            </div>
+
+        </div>
+        <!-- <img src="photo.jpeg" alt="self" class="photo"> -->
+        <!-- <div class="header-text">
+            <p>Aspiring Software Developer</p>
+            <h1>Hi, I'm<span><br> Rashmirekha</span> Sahoo</h1>
+        </div> -->
+   </div>
+   <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/images (1).jpg" alt="">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Aspiring Web Developer eager to kickstart a career in front-end development.Recent graduate with a solid foundation in HTML,CSS,and Javascript.Excited to contribute creative problem-solving skills,a keen eye for design,and a strong determination to learn and grow.Comitted to writting clean and efficient code while collaborating with teams to deliver user-centric web experiences.Seeking my technical skills in a supportive and innovative environment.</p>
+                <div class="tab-titles">
+                    <div class="tab-links active-link" onclick="opentab('skills')">Skills</div>
+                    <div class="tab-links" onclick="opentab('education')">Education</div>
+                    <div class="tab-links" onclick="opentab('experiences')">Experiences</div>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>C</span><br></li>
+                        <li><span>HTML</span><br></li>
+                        <li><span>CSS</span><br></li>
+                        <li><span>JAVASCRIPT</span><br></li>
+                        <li><span>JAVA</span><br></li>
+                        <li><span>MYSQL</span><br></li>
+                    </ul>
+                </div>
+               
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>MCA(Master in Computer Applications)</span><br>2023 passed out</li>
+                        <li><span>Graduation</span><br>2021 passed out </li>
+                        <li><span>Intermediate</span><br>2018 passed out</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experiences">
+                    <ul>
+                        <li><span>Web Development Intern</span><br> @Codsoft</li>
+                        <li><span>Java Development Intern</span><br>@Octanet Pvt Ltd</li>
+                        <li><span>Java Software Developer</span><br> @Edujobs Academy Pvt Ltd</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+   </div>
+               
+            </div>
+
+        </div>
+    </div>
+</div>
+        
+    
+
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> rashmirekhas880@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>7735997417</p>
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="RESUMEjs.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your email" required>
+                    <textarea name="message" rows="6" placeholder="Your message"></textarea>
+                    <button type="submit" class="btn btn2">submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+   
+
+   <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+                
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+   </script>
+   
+
+</body>
+</html>
